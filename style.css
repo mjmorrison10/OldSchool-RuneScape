@@ -1,0 +1,304 @@
+:root {
+    --bg-color: black;
+    --color-txt: white;
+    --color-hyplink: #90c040;
+    --color-title: #6D4211;
+    --color-smalltitle: #7B4F17;
+    --font-family: Arial,Helvetica,sans-serif;
+    --font-size: 10px;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color-txt);
+    font-family: var(--font-family);
+    line-height: 1;
+    font-size: var(--font-size);
+}
+
+a {
+    color: var(--color-hyplink);
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-wrap {
+    background: url(https://www.runescape.com/img/rsp777/bg2.jpg) repeat-y center top;
+    margin: 0 auto;
+    overflow-y: hidden;
+    padding: 0 50px;
+    width: 815px;
+}
+
+/* Login Box */
+
+.login  {
+    background: black;
+    border: 2px solid #382418;
+    display: block;
+    font-size: 1.3em;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+    width: 750px;
+}
+
+.loginlink {
+    float: right;
+    margin: 3;
+}
+
+/* Logo */
+
+.header {
+    display: block;
+    margin-bottom: 25px;
+    min-height: 135px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.header p {
+    font-size: 1.3em;
+    line-height: 150%;
+}
+
+
+/* Main Section */
+
+
+#main {
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-top: 4px;
+    position: relative;
+}
+
+.main-left {
+    float: left;
+    margin-left: 30px;
+    width: 260px;
+}
+
+.main-boxes {
+    background: black;
+    border: 2px solid #382418;
+    padding: 6px;
+    padding-top: 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.main-boxes h1 {
+    font-size: 1.3em;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: -18px;
+    width: 100%;
+}
+
+.main-boxes ul {
+    list-style: none;
+    display: block;
+    font-size: 1.3em;
+    padding-left: 0.2em;
+    padding-bottom: 0;
+}
+
+.main-boxes img {
+    margin-right: 0.5em;
+}
+
+.main-right {
+    float: right;
+    padding-top: 23px;
+    width: 490px;
+}
+
+.button {
+    background: url(https://www.runescape.com/img/rsp777/splash/compare_users.gif) no-repeat center;
+    color: var(--color-txt);
+    display: inline-block;
+    font-weight: bold;
+    height: 103px;
+    margin-right: 8px;
+    padding: 11px;
+    text-align: center;
+    vertical-align: top;
+    width: 130px;
+}
+
+.button h1 {
+    margin-top: 30px;
+    font-size: 1.7em;
+    padding: 0;
+}
+
+.main-right p {
+    display: block;
+    font-size: 1.3em;
+    margin-top: -10px;
+    text-align: center;
+    width: 100%;
+}
+
+.main-right span {
+    display: block;
+    font-size: 1.3em;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* News and Update section */
+
+.welcomeWrap {
+    background-image: url(https://www.runescape.com/img/rsp777/scroll/backdrop_745.gif);
+    max-width: 745px;  
+    margin: 0 auto 0;
+    color: black;
+}
+
+.welcomeWrap::before {
+    position: relative;
+    top: -2.5em;
+    right: 1em;
+    content: url(https://www.runescape.com/img/rsp777/scroll/backdrop_765_top.gif);
+}
+
+
+.head h1 {
+    color: var(--color-title);
+    font-family: initial;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+    margin-top: -.5em;
+}
+
+.head p {
+   line-height: 150%;
+   padding: 0 4em;
+   font-size: 1.2em;
+}
+
+.news {
+    flex-direction: column;
+    align-items: center;
+}
+
+.news h1 {
+    margin-bottom: 30px;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+}
+
+.news a {
+    color: var(--color-smalltitle);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.news-topics {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    width: 540px
+}
+
+.news-topics::after {
+    background: #6B7B17;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.news-details {
+    float: right;
+    width: 350px;
+}
+
+.news-details h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 15px;   
+}
+
+.news-details p {
+    font-size: 1.3em;
+}
+
+.news-bottom a {
+    font-size: 1em;
+}
+
+.news-bottom {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: -20px;
+}
+
+
+.welcomeWrap::after {
+    content: url(https://www.runescape.com/img/rsp777/scroll/backdrop_765_bottom.gif);
+    position: relative;
+    bottom: -3em;
+    left: -1em;
+}
+
+footer {
+    padding-top: 15px;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.jagexLogo {
+    display: block;
+    margin: 15px 20px 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.rss {
+    background: url(https://www.runescape.com/img/rsp777/rss.png) no-repeat center;
+    color: transparent;
+    height: 21px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    width: 21px;
+}
+
+footer p {
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
